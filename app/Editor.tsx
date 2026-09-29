@@ -3944,7 +3944,7 @@ export default function Editor({ initialLang, onReady }: { initialLang: Lang; on
                   onClick={() => !leftOpen && setLeftOpen(true)}
                   style={{ width: 40, height: 40, display: "grid", placeItems: "center", cursor: leftOpen ? "default" : "pointer" }}
                 >
-                  <Logo size={32} color={p.primary} glyph={p.onPrimary} />
+                  <Logo size={32} />
                 </div>
               )}
               <div style={{ height: 6 }} />

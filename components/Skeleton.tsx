@@ -84,7 +84,7 @@ export function Skeleton() {
       <aside className="m3e-skel-left">
         <div className="m3e-skel-rail">
           <div style={{ width: 40, height: 40, display: "grid", placeItems: "center" }}>
-            <Logo size={32} color="var(--skel-primary)" />
+            <Logo size={32} />
           </div>
           <div style={{ height: 6 }} />
           {Array.from({ length: 7 }, (_, i) => (

@@ -5,14 +5,14 @@ const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_ORIGIN ?? "https://lnkiai.github.io"),
-  title: "M3E Canvas",
-  applicationName: "M3E Canvas",
+  title: "UK Soft & Solutions PLT.",
+  applicationName: "UK Soft & Solutions PLT.",
   alternates: { canonical: `${BASE}/` },
   description:
-    "Sketch Material 3 Expressive screens in the browser and turn them into vibe-coding prompts. / Material 3 Expressive の画面をブラウザで組み立てて、そのままプロンプトに。",
+    "UK Soft & Solutions PLT. — Material 3 Expressive design studio.",
   openGraph: {
-    title: "M3E Canvas",
-    description: "Design Material 3 Expressive screens, link them, preview them, and copy a prompt for your AI coding tool.",
+    title: "UK Soft & Solutions PLT.",
+    description: "Material 3 Expressive design studio by UK Soft & Solutions PLT.",
     images: [`${BASE}/og.png`],
     type: "website",
   },
@@ -30,7 +30,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="ja">
+    <html lang="ja" suppressHydrationWarning>
       <head>
         {/* before the first paint: the panel widths and the theme colours the last visit left, so
             the shell drawn while the editor loads is the one that appears. The editor reads the
